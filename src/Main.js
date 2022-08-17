@@ -1,6 +1,7 @@
 import React from "react";
 import img1 from './img/image1.jpg'
 import img2 from './img/image2.jpg'
+import HornedBeast from './HornedBeast'
 
 
 class Main extends React.Component {
@@ -13,13 +14,16 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-        <h2>{this.props.title1}</h2>
-        <p>The Nubian ibex’s gigantic, backward-curling horns are even more impressive when you consider that the ibex uses them to smash into male competitors while on top of scary mountains in North Africa and Arabia. There are a few different types of ibex and nobody’s quite sure whether they’re the same species or not, so please, alpine ibex fans, don’t be upset that the Nubian variety is up here instead.</p>
-        <img src={img1} alt="Nubian Ibex" />
+        <HornedBeast title='firt Horned'
+          imgSrc={img1} altTxt='first Horned'
+          imgTitle='first horned' description='my first example of horned' />
 
-        <h2>{this.props.title2}</h2>
-        <p>The mouflon is thought to be the ancestor of our modern, very familiar domestic sheep. Sometime during the domestication process the mouflon lost its absolutely stupendous horns, great tough curving loops that make you wonder why “sheep” could ever have meek connotations.</p>
-        <img src={img2} alt="Nubian Ibex" />
+
+
+        <HornedBeast title='second Horned'
+          imgSrc={img2} altTxt='second Horned'
+          imgTitle='second horned' description='my second example of horned' />
+        
       </main>
     )
   }
