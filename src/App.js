@@ -14,8 +14,8 @@ function App() {
     <div>
       <Header />
       <Main
-        title1="Nubian Ibex"
-        title2="Mouflon"
+        // title1="Nubian Ibex"
+        // title2="Mouflon"
       />
       <Footer />
     </div>
