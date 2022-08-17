@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from './img/image1.jpg'
-import img2 from './img/image2.jpg'
-import HornedBeast from './HornedBeast'
-import data from './data.json'
+// import img1 from './img/image1.jpg';
+// import img2 from './img/image2.jpg';
+import HornedBeast from './HornedBeast';
+import Data from './data.json';
 
 
 class Main extends React.Component {
@@ -15,7 +15,7 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-        {DataTransfer.map((value) => (<HornedBeast _id = {value._id} image_url = {value.image_url} title = {value.title} description = {value.description} keyword = {value.keyword} horns = {value.horns} />
+        {Data.map((value) => (<HornedBeast _id = {value._id} image_url = {value.image_url} title = {value.title} description = {value.description} keyword = {value.keyword} horns = {value.horns} key = {value._id} className = "value"/>
         ))} 
       </main>
     )
