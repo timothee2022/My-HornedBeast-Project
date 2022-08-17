@@ -12,7 +12,7 @@ class HornedBeast extends React.Component {
     return (
       <div>
         <h2>{this.props.title}</h2>
-        <img src={this.props.imgSrc} alt={this.props.altTxt}></img>
+        <img id={this.props.id} src={this.props.imageURL} titlte={this.props.imgTitle} alt={this.props.description} ></img>
         <p>{this.props.description}</p>
       </div>
     )
