@@ -3,6 +3,7 @@ import Header from './Header.js';
 // import Header from './src/footer.js';
 import Main from './Main.js';
 // import HornedBeast from './HornedBeast';
+import Data from './data.json'
 
 
 
