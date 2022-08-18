@@ -1,10 +1,12 @@
 import Footer from './Footer.js';
 import Header from './Header.js';
-// import Header from './src/footer.js';
 import Main from './Main.js';
-// import HornedBeast from './HornedBeast';
 import Data from './data.json'
-// import Count from './Count.js'
+import SelectedBeast from './SelectedBeast.js';
+
+
+
+
 
 
 
@@ -21,6 +23,7 @@ function App() {
         // title2="Mouflon"
       />
       <Footer />
+      <SelectedBeast />
     </div>
 
   );
