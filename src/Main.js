@@ -2,7 +2,8 @@ import React from "react";
 // import img1 from './img/image1.jpg';
 // import img2 from './img/image2.jpg';
 import HornedBeast from './HornedBeast';
-import Data from './data.json';
+// import Data from './data.json';
+// import SelectedBeast from './SelectedBeast.js';
 
 
 class Main extends React.Component {
@@ -18,8 +19,10 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-        {Data.map((value) => (
+
+        {this.props.data.map((value) => (
         <HornedBeast 
+        handleOpen={this.props.handleOpen}
           _id = {value._id} 
           imageURL = {value.image_url} 
           title = {value.title} 

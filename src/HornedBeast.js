@@ -2,18 +2,20 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 
 class HornedBeast extends React.Component {
-
-
   constructor(props) {
-    console.log(props.title);
     super(props);
-
-    this.state = { votes: 0 };
+    this.state={ 
+      votes: 0 
+    }
   }
 
-  upvote = () => {
-    this.setState({ votes: this.state.votes + 1 })
-  }
+  // upvote = () => {
+  // this.setState({ votes: this.state.votes + 1 });
+  // this.setState({ votes: numberOfVotes });
+  // if (numberOfVotes >= 10) {
+  //   this.props.handler(this.props.my.title)
+  // }
+  // }
   render() {
     return (
 
@@ -24,7 +26,7 @@ class HornedBeast extends React.Component {
           <Card.Body>
             <Card.Title><h2>{this.props.title}</h2></Card.Title>
             <img alt="" />
-            <Card.Img onClick={this.upvote}
+            <Card.Img onClick={ () => this.props.handleOpen(this.props.title)}
               src={this.props.imageURL}
               alt={this.props.description}
               title={this.props.title} />
@@ -37,9 +39,9 @@ class HornedBeast extends React.Component {
             {/* <Button variant="primary">Go somewhere</Button> */}
           </Card.Body>
         </Card>
-        );
+      </>
+    )
   }
 }
-      </>
 
 export default HornedBeast;
