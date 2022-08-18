@@ -15,7 +15,17 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-        {Data.map((value) => (<HornedBeast _id = {value._id} image_url = {value.image_url} title = {value.title} description = {value.description} keyword = {value.keyword} horns = {value.horns} key = {value._id} className = "value"/>
+        {Data.map((value) => (
+        <HornedBeast 
+          _id = {value._id} 
+          imageURL = {value.image_url} 
+          title = {value.title} 
+          description = {value.description} 
+          keyword = {value.keyword} 
+          horns = {value.horns} 
+          key = {value._id} 
+          className = "value"
+        />
         ))} 
       </main>
     )
