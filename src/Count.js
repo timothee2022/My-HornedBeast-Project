@@ -1,42 +1,42 @@
-import React from 'react';
+// import React from 'react';
 
-// What props did we get?
-// "handler" ... this ia function to call up in the parent
-// "my" ... this.props.my
-// What is the value of that prop?
-    /*
-      {
-        "_id": 1,
-        "name": "John"
-      },
-    */
+// // What props did we get?
+// // "handler" ... this ia function to call up in the parent
+// // "my" ... this.props.my
+// // What is the value of that prop?
+//     /*
+//       {
+//         "_id": 1,
+//         "name": "John"
+//       },
+//     */
 
-class Count extends React.Component {
+// class Count extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      votes: 0,
-      sleeping: true,
-    };
-  }
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       votes: 0,
+//       sleeping: true,
+//     };
+//   }
 
-  upvote = () => {
-    let numberOfVotes = this.state.votes + 1;
-    this.setState( { votes: numberOfVotes} );
-    if(numberOfVotes >= 10) {
-      this.props.handler( this.props.my.name  )
-    }
-  }
+//   upvote = () => {
+//     let numberOfVotes = this.state.votes + 1;
+//     this.setState( { votes: numberOfVotes} );
+//     if(numberOfVotes >= 10) {
+//       this.props.handler( this.props.my.name  )
+//     }
+//   }
 
-  render() {
-    return (
-      <div onClick={this.upvote}>
-        {this.props.my.name}
-        <span> ({this.state.votes}) </span>
-      </div>
-    )
-  }
-}
+//   render() {
+//     return (
+//       <div onClick={this.upvote}>
+//         {this.props.my.name}
+//         <span> ({this.state.votes}) </span>
+//       </div>
+//     )
+//   }
+// }
 
-export default Count;
+// export default Count;
