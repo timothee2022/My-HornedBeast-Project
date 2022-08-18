@@ -4,6 +4,7 @@ import Header from './Header.js';
 import Main from './Main.js';
 // import HornedBeast from './HornedBeast';
 import Data from './data.json'
+// import Count from './Count.js'
 
 
 
