@@ -10,7 +10,10 @@ class Main extends React.Component {
   constructor(props) {
     console.log(props.title);
     super(props);
+    this.state = {count: 0}
   }
+
+
 
   render() {
     return (
